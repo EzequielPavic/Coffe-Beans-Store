@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="es-ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Brans - Inicio</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coffee Beans - Inicio</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Tu CSS -->
+<link rel="stylesheet" href="./styles/styles.css" />
 </head>
 <body>
-<header>
-<a href="/index.html">
-<img src="./assets/logo-de coffe-beans.jpg" alt="Logo de Coffe Beans" title="Logo">
+
+<header class="bg-dark text-white p-3 mb-4">
+<div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+<img src="./assets/logo-de coffe-beans.jpg" alt="Logo de Coffee Beans" title="Logo" width="60" class="me-2" />
+<h1 class="h4 m-0">Coffee Beans</h1>
     </a>
-<h1>Cofee Beans</h1>
-<nav>
-    <ul>
-        <li><a href="./pages/galeria.html">Galerìa</a></li>
-        <li><a href="./pages/tienda.html">Tienda</a></li>
-        <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
 
-
-    </ul>
-    
-</nav>
-</header>
-<main>
-    <section>
-        <h2>Bienvenidos a Coffee Beans</h2>
-        <p>Somos una tienda apasionada por el café de calidad. Desde granos seleccionados hasta accesorios para baristas, en Coffee Beans vas a encontrar todo lo que necesitás para disfrutar de una experiencia cafetera única.</p>
-        <img src="./assets/taza-especial-cafe.jpg" alt="Taza de café humeante">
-    </section>
-
-    <section>
-        <h2>Nuestros Productos</h2>
-        <p><b>Visita nuestra</b> <a href="./pages/tienda.html"><b>Tienda</b></a> y descubrí las diferentes variedades de café en grano, molido y accesorios exclusivos.</p>
-        <ul>
-            <li>Café en grano Premium</li>
-            <li>Café molido de diferentes intensidades</li>
-            <li>Tazas y accesorios Coffee Beans</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Conocé nuestra historia</h2>
-        <p>Querés saber cómo nació Coffee Beans y qué nos inspira todos los días? Visitá la sección <a href="./pages/sobrenosotros.html"><b>Sobre Nosotros</b></a> y descubrí nuestra pasión por el café.</p>
-    </section>
-
-    <section>
-        <h2>Galería de Experiencias</h2>
-        <p>Explorá nuestra <a href="./pages/galeria.html">Galería</a> y mirá imágenes de nuestros productos, clientes y momentos especiales en la tienda.</p>
-        <img src="./assets/interior-local-cafe.jpg" alt="Foto de clientes disfrutando café">
-    </section>
-
-    <section>
-        <h2>Contactanos</h2>
-        <p>¿Tenés dudas o querés hacer un pedido personalizado? Andá a nuestra sección de <a href="./pages/contacto.html"><b>Contacto</b></a> y escribinos.</p>
-    </section>
-</main>
-<footer>
-    <h2>Derechos Reservados</h2>
-    <h2>Redes Sociales</h2>
     <nav>
-        <a href="https://www.facebook.com/" target="_blank">
-            <img src="./assets/logo-facebook.avif" alt="Facebook">
-            Facebook</a>
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="./assets/logo-instagram.png" alt="Instagram">Instagram</a>
-        <a href="https://www.whatsapp.com/" target="_blank">
-            <img src="./assets/logo-whatsapp.webp" alt="Whatsapp">
-            Whatsapp</a>          
+<ul class="nav">
+        <li class="nav-item"><a href="./pages/galeria.html" class="nav-link text-white">Galería</a></li>
+        <li class="nav-item"><a href="./pages/tienda.html" class="nav-link text-white">Tienda</a></li>
+        <li class="nav-item"><a href="./pages/sobrenosotros.html" class="nav-link text-white">Sobre Nosotros</a></li>
+        <li class="nav-item"><a href="./pages/contacto.html" class="nav-link text-white">Contacto</a></li>
+</ul>
     </nav>
-    
+</div>
+</header>
+
+<main class="container">
+
+<section class="mb-5">
+    <h2>Bienvenidos a Coffee Beans</h2>
+    <p>Somos una tienda apasionada por el café de calidad. Desde granos seleccionados hasta accesorios para baristas, en Coffee Beans vas a encontrar todo lo que necesitás para disfrutar de una experiencia cafetera única.</p>
+    <img src="./assets/taza-especial-cafe.jpg" alt="Taza de café humeante" class="img-fluid rounded shadow" />
+</section>
+
+<section class="mb-5">
+    <h2>Nuestros Productos</h2>
+    <p>Visita nuestra <a href="./pages/tienda.html"><strong>Tienda</strong></a> y descubrí las diferentes variedades de café en grano, molido y accesorios exclusivos.</p>
+    <ul>
+<li>Café en grano Premium</li>
+<li>Café molido de diferentes intensidades</li>
+<li>Tazas y accesorios Coffee Beans</li>
+    </ul>
+</section>
+
+<section class="mb-5">
+    <h2>Conocé nuestra historia</h2>
+    <p>¿Querés saber cómo nació Coffee Beans y qué nos inspira todos los días? Visitá la sección <a href="./pages/sobrenosotros.html"><strong>Sobre Nosotros</strong></a> y descubrí nuestra pasión por el café.</p>
+</section>
+
+<section class="mb-5">
+    <h2>Galería de Experiencias</h2>
+    <p>Explorá nuestra <a href="./pages/galeria.html">Galería</a> y mirá imágenes de nuestros productos, clientes y momentos especiales en la tienda.</p>
+    <img src="./assets/interior-local-cafe.jpg" alt="Clientes disfrutando café" class="img-fluid rounded shadow" />
+</section>
+
+<section class="mb-5">
+    <h2>Contactanos</h2>
+    <p>¿Tenés dudas o querés hacer un pedido personalizado? Andá a nuestra sección de <a href="./pages/contacto.html"><strong>Contacto</strong></a> y escribinos.</p>
+</section>
+
+</main>
+
+<footer class="bg-dark text-white p-3 mt-4">
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <h2 class="h5 mb-2 mb-md-0">Derechos Reservados</h2>
+    <nav class="d-flex gap-3">
+<a href="https://www.facebook.com/" target="_blank" class="text-white d-flex align-items-center text-decoration-none">
+        <img src="./assets/logo-facebook.avif" alt="Facebook" width="24" class="me-1" /> Facebook
+</a>
+<a href="https://www.instagram.com/" target="_blank" class="text-white d-flex align-items-center text-decoration-none">
+        <img src="./assets/logo-instagram.png" alt="Instagram" width="24" class="me-1" /> Instagram
+</a>
+<a href="https://www.whatsapp.com/" target="_blank" class="text-white d-flex align-items-center text-decoration-none">
+        <img src="./assets/logo-whatsapp.webp" alt="Whatsapp" width="24" class="me-1" /> Whatsapp
+</a>
+    </nav>
+</div>
 </footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
