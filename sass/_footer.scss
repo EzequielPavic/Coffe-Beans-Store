@@ -1,0 +1,37 @@
+@use "variables" as v;
+footer {
+    background-color: $color-primario;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        color: $color-claro;
+        margin: 0 10px;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    img {
+        width: 20px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .contenedor-tienda {
+        grid-template-columns: 1fr;
+        
+        .productos {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+}

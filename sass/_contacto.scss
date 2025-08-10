@@ -1,0 +1,58 @@
+@use "variables" as v;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+
+    label {
+        font-weight: bold;
+        align-self: flex-start;
+    }
+
+    input {
+        padding: 8px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: $color-primario;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $color-secundario;
+        }
+    }
+}
+
+details {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    text-align: left;
+
+    summary {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-tienda {
+        grid-template-columns: 1fr;
+        
+        .productos {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+}
+

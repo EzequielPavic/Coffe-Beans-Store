@@ -1,0 +1,26 @@
+@use "variables" as v;
+
+// Variables de colores
+$color-primario: #4E342E;
+$color-secundario: #8D6E63;
+$color-claro: #D7CCC8;
+$color-fondo: #ffffff;
+
+// Variables de tipografía
+$fuente-principal: Arial, sans-serif;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .contenedor-tienda {
+        grid-template-columns: 1fr;
+        
+        .productos {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+}

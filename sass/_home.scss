@@ -1,0 +1,21 @@
+@use "variables" as v;
+.home {
+.header-principal {
+background: linear-gradient(to right, $color-primario, lighten($color-primario, 10%));
+
+.nav-principal ul li a {
+font-size: 1.1rem;
+padding: 0.5rem 1rem;
+
+@media (max-width: 768px) {
+font-size: 1rem;
+padding: 0.5rem;
+}
+}
+}
+// Resto de estilos específicos para la home
+.hero {
+background: linear-gradient(to bottom, lighten($color-claro, 15%), white);
+}
+}
+
