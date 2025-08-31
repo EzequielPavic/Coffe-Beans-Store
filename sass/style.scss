@@ -15,12 +15,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+height: 100%;
+overflow-x: hidden; 
+background-color: v.$color-fondo; 
+}
+
 body {
-    font-family: $fuente-principal;
-    background-color: $color-fondo;
-    color: $color-primario;
+    font-family: v.$fuente-principal;
+    background-color: v.$color-fondo;
+    color: v.$color-primario;
     line-height: 1.6;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -31,15 +36,19 @@ main {
     flex: 1;
     padding: 20px;
     text-align: center;
+}
 
     h2 {
         margin-bottom: 15px;
-        color: $color-primario;
+        color: v.$color-primario;
     }
 
     p {
         margin-bottom: 10px;
     }
+
+footer {
+margin-top: auto;
 }
 
 /* RESPONSIVE MOBILE */
@@ -54,41 +63,50 @@ main {
     }
 }
 
-@media (max-width: 425px) {
-    nav ul {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .galeria-imagenes {
-        grid-template-columns: 1fr 1fr;
-
-        img {
-            max-width: 140px;
-            height: 110px;
-        }
-    }
-
-    form, details, footer nav {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    form input {
-        width: 100%;
+@media (max-width: 768px) {
+.galeria-imagenes {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+    img {
+max-width: 180px;
+height: 140px;
     }
 }
-@media (max-width: 768px) {
-    .contenedor-tienda {
-        grid-template-columns: 1fr;
-        
-        .productos {
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        }
+
+.contenedor-tienda {
+    grid-template-columns: 1fr;
+    
+    .productos {
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
+}
+}
+
+@media (max-width: 425px) 
+nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.galeria-imagenes {
+    grid-template-columns: 1fr 1fr;
+
+    img {
+    max-width: 140px;
+height: 110px;
+    }
+}
+
+form, details, footer nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+form input {
+    width: 100%;
 }
